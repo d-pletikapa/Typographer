@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;
@@ -36,6 +40,18 @@ h1 {
   border: solid 2px #45a049;
 }
 
+#testBlock textarea {
+  display: block;
+  font-family: monospace;
+  border: none;
+  outline: none;
+  padding: 20px;
+  width: 97%;
+  height: 210px;
+  resize: none;
+  white-space: nowrap;
+}
+
 #typographyButton {
   display: block;
   width: 100%;
@@ -47,6 +63,22 @@ h1 {
   border-radius: 16px;
   font-weight: 700;
   font-size: 16px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+#toggleTestBlock:hover {
+cursor: pointer;
+color: #000;
+}
+
+#toggleTestBlock {
+  border: 1px dashed grey;
+  border-top: none;
+  border-left: none;
+  border-radius: 0 0 10px 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: darkslategray;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 

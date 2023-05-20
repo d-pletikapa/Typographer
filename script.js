@@ -57,6 +57,13 @@ const typographer = () => {
       console.error('Ошибка при копировании текста:', error);
     }
   });
+  // Показать и скрыть тест блок
+  const toggleButton = document.getElementById('toggleTestBlock');
+  const testBlock = document.getElementById('testBlock');
+
+  toggleButton.addEventListener('click', () => {
+    testBlock.classList.toggle('hidden');
+  });
 };
 
 // Вызываем функцию typographer при загрузке страницы
