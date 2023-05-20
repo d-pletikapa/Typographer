@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="module" src="./script.js"></script>
+  <title>Typographer</title>
+</head>
+<body>
+<main class="general">
+    <section class="general__input section">
+      <div class="container">
+        <h1>Типограф</h1>
+        <textarea id="input" placeholder="Введите текст..."></textarea>
+        <button id="typographyButton">Типографировать</button>
+      </div>
+    </section>
+    <section class="general__output section">
+      <div class="container">
+        <textarea id="output" placeholder="Оттипографированный текст будет здесь:"></textarea>
+        <button type="button" id="copyButton">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+           xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 16 16">
+            <path d="M6 0v3h3z"></path>
+            <path d="M9 4h-4v-4h-5v12h9z"></path>
+            <path d="M13 4v3h3z"></path>
+            <path d="M12 4h-2v9h-3v3h9v-8h-4z"></path>
+            </svg>
+          <span id="copyButton__text">Копировать</span>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
